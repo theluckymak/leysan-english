@@ -1,7 +1,6 @@
 (function() {
   var lang = localStorage.getItem('leysan-lang') || 'ru';
   var toggle = document.getElementById('langToggle');
-  var menuBtn = document.getElementById('mobileMenuBtn');
   var nav = document.querySelector('.nav');
   var lightbox = document.getElementById('lightbox');
   var lightboxImg = document.getElementById('lightboxImg');
@@ -30,22 +29,6 @@
 
   toggle.addEventListener('click', function() {
     setLang(lang === 'ru' ? 'en' : 'ru');
-  });
-
-  menuBtn.addEventListener('click', function() {
-    nav.classList.toggle('active');
-  });
-
-  document.addEventListener('click', function(e) {
-    if (!nav.contains(e.target) && e.target !== menuBtn && !menuBtn.contains(e.target)) {
-      nav.classList.remove('active');
-    }
-  });
-
-  nav.querySelectorAll('a').forEach(function(link) {
-    link.addEventListener('click', function() {
-      nav.classList.remove('active');
-    });
   });
 
   var diplomaCards = document.querySelectorAll('.diploma-card');
