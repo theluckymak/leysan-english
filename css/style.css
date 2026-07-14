@@ -124,17 +124,13 @@ img {
 
 .lang-toggle {
   position: relative;
-  width: 70px;
-  height: 34px;
-  background: rgba(205, 180, 219, 0.2);
+  width: 72px;
+  height: 32px;
+  background: rgba(205, 180, 219, 0.18);
   border: 1.5px solid var(--thistle);
   border-radius: 50px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 6px;
-  transition: all 0.3s;
+  transition: background 0.3s;
 }
 
 .lang-toggle:hover {
@@ -142,36 +138,46 @@ img {
 }
 
 .lang-toggle__label {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 1;
-  font-size: 0.7rem;
-  font-weight: 800;
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
   transition: color 0.3s;
   pointer-events: none;
-  width: 24px;
-  text-align: center;
+  line-height: 1;
 }
 
-.lang-toggle__label--ru { color: var(--white); }
-.lang-toggle__label--en { color: var(--text-light); }
+.lang-toggle__label--ru {
+  left: 7px;
+  color: var(--white);
+}
+
+.lang-toggle__label--en {
+  right: 7px;
+  color: var(--text-light);
+}
 
 .lang-toggle.en .lang-toggle__label--ru { color: var(--text-light); }
 .lang-toggle.en .lang-toggle__label--en { color: var(--white); }
 
 .lang-toggle__knob {
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 2px;
+  left: 2px;
   width: 26px;
   height: 26px;
   background: var(--thistle);
   border-radius: 50%;
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  z-index: 0;
 }
 
 .lang-toggle.en .lang-toggle__knob {
-  transform: translateX(38px);
+  transform: translateX(42px);
 }
 
 .lang-toggle:hover .lang-toggle__knob {
