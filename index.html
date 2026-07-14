@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лея — Английский для детей онлайн</title>
+  <meta name="description" content="Английский для детей от 3 до 12 лет онлайн. Интерактивные уроки по Power Up (Cambridge). Первый урок бесплатно!">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a href="#" class="logo" data-ru="Лея" data-en="Leya">Лея</a>
+      <nav class="nav">
+        <a href="#about" data-ru="Обо мне" data-en="About">Обо мне</a>
+        <a href="#lessons" data-ru="Уроки" data-en="Lessons">Уроки</a>
+        <a href="#pricing" data-ru="Форматы" data-en="Formats">Форматы</a>
+        <a href="#diplomas" data-ru="Дипломы" data-en="Diplomas">Дипломы</a>
+        <a href="#contact" class="btn btn--small" data-ru="Записаться" data-en="Sign Up">Записаться</a>
+      </nav>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-toggle__active">RU</span>
+        <span class="lang-toggle__divider">/</span>
+        <span class="lang-toggle__inactive">EN</span>
+      </button>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero__bg"></div>
+  <div class="container">
+    <div class="hero__content">
+      <p class="hero__greeting" data-ru="Привет! Я" data-en="Hi! I'm">Привет! Я</p>
+      <h1 class="hero__title">Лея</h1>
+      <p class="hero__subtitle" data-ru="ваш проводник в мир английского без слез и скуки" data-en="your guide to English without tears or boredom">ваш проводник в мир английского без слез и скуки</p>
+      <p class="hero__desc" data-ru="Английский для детей 3–12 лет онлайн. Игры, песни, творчество — и никакой зубрежки." data-en="English for kids ages 3–12 online. Games, songs, creativity — and no boring drills.">Английский для детей 3–12 лет онлайн. Игры, песни, творчество — и никакой зубрежки.</p>
+      <a href="#contact" class="btn btn--large" data-ru="Бесплатный пробный урок" data-en="Free Trial Lesson">Бесплатный пробный урок</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__image">
+        <div class="about__image-placeholder">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="100" fill="#ffc8dd"/>
+            <circle cx="100" cy="80" r="40" fill="#cdb4db"/>
+            <ellipse cx="100" cy="180" rx="60" ry="30" fill="#cdb4db"/>
+          </svg>
+        </div>
+      </div>
+      <div class="about__text">
+        <h2 data-ru="Здравствуйте, дорогие родители!" data-en="Hello, dear parents!">Здравствуйте, дорогие родители!</h2>
+        <p data-ru="Меня зовут Лея. Мне 23 года, и я безумно люблю то, что делаю. Когда я говорю, что работаю с детьми, это звучит слишком официально. На самом деле я — старший друг, который помогает малышам и школьникам открыть для себя «секретный язык», на котором говорят герои их любимых мультфильмов." data-en="My name is Leya. I'm 23 years old and I absolutely love what I do. Saying I 'work with children' sounds too formal. In reality, I'm a big friend who helps little ones and schoolchildren discover the 'secret language' spoken by the heroes of their favorite cartoons.">Меня зовут Лея. Мне 23 года, и я безумно люблю то, что делаю. Когда я говорю, что работаю с детьми, это звучит слишком официально. На самом деле я — старший друг, который помогает малышам и школьникам открыть для себя «секретный язык», на котором говорят герои их любимых мультфильмов.</p>
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__number">4+</span>
+            <span class="stat__label" data-ru="года опыта" data-en="years experience">года опыта</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">3–12</span>
+            <span class="stat__label" data-ru="лет возраст" data-en="years age">лет возраст</span>
+          </div>
+          <div class="stat">
+            <span class="stat__number">100%</span>
+            <span class="stat__label" data-ru="онлайн" data-en="online">онлайн</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-online" id="why">
+  <div class="container">
+    <h2 class="section-title" data-ru="Почему онлайн — это работает" data-en="Why Online Works">Почему онлайн — это работает</h2>
+    <div class="why-online__grid">
+      <div class="why-online__text">
+        <p data-ru="Я начинала свой путь в языковой школе, где работала с группами и индивидуально. У меня за плечами несколько лет очного преподавания и диплом бакалавра. Но однажды я попробовала онлайн-формат и поняла: границы между нами стираются, как только мы начинаем играть." data-en="I started my journey at a language school, working with groups and one-on-one. I have several years of in-person teaching experience and a bachelor's degree. But one day I tried the online format and realized: boundaries disappear the moment we start playing.">Я начинала свой путь в языковой школе, где работала с группами и индивидуально. У меня за плечами несколько лет очного преподавания и диплом бакалавра. Но однажды я попробовала онлайн-формат и поняла: границы между нами стираются, как только мы начинаем играть.</p>
+        <p data-ru="Я лично убедилась, что ребенок на экране может быть включен в процесс даже глубже, чем в шумном классе. Именно поэтому я полностью перешла в онлайн. Теперь у меня есть доступ к десяткам интерактивных инструментов, а у вас — возможность не тратить время на дорогу и видеть прогресс ребенка прямо из дома." data-en="I've personally seen that a child on screen can be even more engaged than in a noisy classroom. That's why I switched fully to online. Now I have access to dozens of interactive tools, and you save travel time while seeing your child's progress right from home.">Я лично убедилась, что ребенок на экране может быть включен в процесс даже глубже, чем в шумном классе. Именно поэтому я полностью перешла в онлайн. Теперь у меня есть доступ к десяткам интерактивных инструментов, а у вас — возможность не тратить время на дорогу и видеть прогресс ребенка прямо из дома.</p>
+      </div>
+      <div class="why-online__benefits">
+        <div class="benefit-card">
+          <div class="benefit-card__icon">🏠</div>
+          <h3 data-ru="Из дома" data-en="From Home">Из дома</h3>
+          <p data-ru="Не тратьте время на дорогу" data-en="No travel time wasted">Не тратьте время на дорогу</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__icon">🎮</div>
+          <h3 data-ru="Интерактив" data-en="Interactive">Интерактив</h3>
+          <p data-ru="Десятки цифровых инструментов" data-en="Dozens of digital tools">Десятки цифровых инструментов</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__icon">👀</div>
+          <h3 data-ru="Контроль" data-en="Visibility">Контроль</h3>
+          <p data-ru="Видите прогресс ребенка" data-en="See your child's progress">Видите прогресс ребенка</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-card__icon">💯</div>
+          <h3 data-ru="Вовлечение" data-en="Engagement">Вовлечение</h3>
+          <p data-ru="Глубже, чем в классе" data-en="Deeper than in class">Глубже, чем в классе</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="textbook" id="textbook">
+  <div class="container">
+    <div class="textbook__inner">
+      <div class="textbook__content">
+        <h2 class="section-title" data-ru="По какому учебнику мы занимаемся?" data-en="Which textbook do we use?">По какому учебнику мы занимаемся?</h2>
+        <p data-ru="Мы работаем по современному и самому «живому» учебнику от Cambridge — <strong>Power Up</strong>. Это не просто книга, это целый мир приключений! Вместе с героями (забавными животными и ребятами) ваш ребенок будет выполнять миссии, разгадывать загадки и даже не заметит, как начнет говорить на английском." data-en="We use the most modern and lively textbook from Cambridge — <strong>Power Up</strong>. It's not just a book; it's a whole world of adventure! Together with the characters (funny animals and kids), your child will complete missions, solve puzzles, and won't even notice when they start speaking English.">Мы работаем по современному и самому «живому» учебнику от Cambridge — <strong>Power Up</strong>. Это не просто книга, это целый мир приключений! Вместе с героями (забавными животными и ребятами) ваш ребенок будет выполнять миссии, разгадывать загадки и даже не заметит, как начнет говорить на английском.</p>
+        <p data-ru="Power Up разработан специально для детей, чтобы совместить веселье с реальными знаниями, которые пригодятся в школе." data-en="Power Up is designed specifically for children to combine fun with real knowledge that will be useful at school.">Power Up разработан специально для детей, чтобы совместить веселье с реальными знаниями, которые пригодятся в школе.</p>
+      </div>
+      <div class="textbook__badge">
+        <div class="badge">
+          <span class="badge__top">Cambridge</span>
+          <span class="badge__main">Power Up</span>
+          <span class="badge__sub" data-ru="Живой английский" data-en="Living English">Живой английский</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lessons" id="lessons">
+  <div class="container">
+    <h2 class="section-title" data-ru="Как проходят наши уроки?" data-en="How do our lessons work?">Как проходят наши уроки?</h2>
+    <p class="section-sub" data-ru="Спойлер: это не скучная зубрежка" data-en="Spoiler: it's not boring drilling">Спойлер: это не скучная зубрежка</p>
+
+    <div class="lessons__highlight">
+      <p data-ru="Моя главная фишка — <strong>абсолютное погружение</strong>. Да, да, мы говорим только на английском! Но не пугайтесь, это не стресс для ребенка. Для них это квест, игра, в которой нужно понять правила и общаться на «волшебном» языке." data-en="My main thing is <strong>total immersion</strong>. Yes, we speak only English! But don't worry — it's not stressful for the child. For them, it's a quest, a game where you need to understand the rules and communicate in a 'magic' language.">Моя главная фишка — <strong>абсолютное погружение</strong>. Да, да, мы говорим только на английском! Но не пугайтесь, это не стресс для ребенка. Для них это квест, игра, в которой нужно понять правила и общаться на «волшебном» языке.</p>
+    </div>
+
+    <div class="lessons__activities">
+      <h3 data-ru="Чем мы занимаемся на уроке:" data-en="What we do during the lesson:">Чем мы занимаемся на уроке:</h3>
+      <div class="activities-grid">
+        <div class="activity">
+          <span class="activity__icon">🎤</span>
+          <h4 data-ru="Поем и танцуем" data-en="Sing & Dance">Поем и танцуем</h4>
+          <p data-ru="Разучиваем песенки и делаем зарядку под ритмичную музыку" data-en="Learn songs and exercise to rhythmic music">Разучиваем песенки и делаем зарядку под ритмичную музыку</p>
+        </div>
+        <div class="activity">
+          <span class="activity__icon">🍕</span>
+          <h4 data-ru="Готовим" data-en="Cooking">Готовим</h4>
+          <p data-ru="Если тема «Еда», мы можем «приготовить» пиццу из бумаги или обсудить рецепт на английском" data-en="If the topic is Food, we might 'make' a paper pizza or discuss a recipe in English">Если тема «Еда», мы можем «приготовить» пиццу из бумаги или обсудить рецепт на английском</p>
+        </div>
+        <div class="activity">
+          <span class="activity__icon">🎨</span>
+          <h4 data-ru="Творим" data-en="Create">Творим</h4>
+          <p data-ru="Рисуем, делаем поделки и аппликации — всё проговаривая на английском" data-en="Draw, craft, and make collages — all while speaking English">Рисуем, делаем поделки и аппликации — всё проговаривая на английском</p>
+        </div>
+        <div class="activity">
+          <span class="activity__icon">🎮</span>
+          <h4 data-ru="Играем" data-en="Play">Играем</h4>
+          <p data-ru="Яркие интерактивы с экрана и карточки Power Up для закрепления слов" data-en="Bright on-screen interactives and Power Up flashcards to memorize words">Яркие интерактивы с экрана и карточки Power Up для закрепления слов</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="lessons__pace">
+      <p data-ru="Я построила уроки так, чтобы ребенок просто не успевал заскучать. Мы постоянно меняем активности: 5 минут говорим, 5 минут смотрим видео, 5 минут рисуем. Это дает <strong>стопроцентное включение</strong> даже у самых непоседливых малышей с 3 лет!" data-en="I structure lessons so children simply don't have time to get bored. We constantly switch activities: 5 minutes talking, 5 minutes watching a video, 5 minutes drawing. This gives <strong>100% engagement</strong> even for the wiggliest toddlers from age 3!">Я построила уроки так, чтобы ребенок просто не успевал заскучать. Мы постоянно меняем активности: 5 минут говорим, 5 минут смотрим видео, 5 минут рисуем. Это дает <strong>стопроцентное включение</strong> даже у самых непоседливых малышей с 3 лет!</p>
+    </div>
+
+    <div class="lessons__reading">
+      <h3 data-ru="Чтение — без давления, но с результатом" data-en="Reading — no pressure, real results">Чтение — без давления, но с результатом</h3>
+      <p data-ru="Я знаю, как важно научить ребенка читать, но не превратить это в пытку. Мы проходим буквы и слоги неспеша и с удовольствием (кстати, в Power Up для этого есть отличные комиксы!). Игровые техники помогают детям соединять буквы в слова естественно, как они когда-то учились говорить на русском." data-en="I know how important it is to teach a child to read without turning it into torture. We learn letters and syllables slowly and with pleasure (by the way, Power Up has great comics for this!). Game techniques help children connect letters into words naturally, just like they once learned to speak Russian.">Я знаю, как важно научить ребенка читать, но не превратить это в пытку. Мы проходим буквы и слоги неспеша и с удовольствием (кстати, в Power Up для этого есть отличные комиксы!). Игровые техники помогают детям соединять буквы в слова естественно, как они когда-то учились говорить на русском.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h2 class="section-title" data-ru="Форматы занятий" data-en="Lesson Formats">Форматы занятий</h2>
+    <p class="section-sub" data-ru="Подберем время под ваш ритм жизни" data-en="Find the right fit for your schedule">Подберем время под ваш ритм жизни</p>
+
+    <div class="pricing__cards">
+      <div class="price-card">
+        <div class="price-card__age">3–5 <span data-ru="лет" data-en="yrs">лет</span></div>
+        <div class="price-card__duration">25 <span data-ru="мин" data-en="min">мин</span></div>
+        <p data-ru="Коротко, ярко, динамично. Ребенок не устает и ждет следующего занятия." data-en="Short, bright, dynamic. The child doesn't get tired and looks forward to the next lesson.">Коротко, ярко, динамично. Ребенок не устает и ждет следующего занятия.</p>
+      </div>
+      <div class="price-card price-card--featured">
+        <div class="price-card__age">6–8 <span data-ru="лет" data-en="yrs">лет</span></div>
+        <div class="price-card__duration">40 <span data-ru="мин" data-en="min">мин</span></div>
+        <p data-ru="Идеально для концентрации младших школьников." data-en="Perfect for the attention span of younger schoolchildren.">Идеально для концентрации младших школьников.</p>
+      </div>
+      <div class="price-card">
+        <div class="price-card__age">9–12 <span data-ru="лет" data-en="yrs">лет</span></div>
+        <div class="price-card__duration">55 <span data-ru="мин" data-en="min">мин</span></div>
+        <p data-ru="Полноценный урок для серьезного изучения языка с играми и диалогами." data-en="A full lesson for serious language learning with games and dialogues.">Полноценный урок для серьезного изучения языка с играми и диалогами.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="diplomas" id="diplomas">
+  <div class="container">
+    <h2 class="section-title" data-ru="Мои дипломы и сертификаты" data-en="My Diplomas & Certificates">Мои дипломы и сертификаты</h2>
+    <div class="diplomas__grid">
+      <div class="diploma-card">
+        <img src="img/1000051409.jpeg" alt="Диплом" loading="lazy">
+      </div>
+      <div class="diploma-card">
+        <img src="img/1000051410.jpeg" alt="Диплом" loading="lazy">
+      </div>
+      <div class="diploma-card">
+        <img src="img/1000051411.jpeg" alt="Диплом" loading="lazy">
+      </div>
+      <div class="diploma-card">
+        <img src="img/1000051412.jpeg" alt="Диплом" loading="lazy">
+      </div>
+      <div class="diploma-card">
+        <img src="img/1000051413.jpeg" alt="Диплом" loading="lazy">
+      </div>
+      <div class="diploma-card">
+        <img src="img/1000051414.jpeg" alt="Диплом" loading="lazy">
+      </div>
+      <div class="diploma-card">
+        <img src="img/1000051415.jpeg" alt="Диплом" loading="lazy">
+      </div>
+      <div class="diploma-card">
+        <img src="img/1000051416.jpeg" alt="Диплом" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="video-teaser">
+  <div class="container">
+    <div class="video-teaser__inner">
+      <blockquote data-ru="В разделе видео вы можете посмотреть, как мы «оживляем» страницы Power Up на экране. Обратите внимание на глаза детей — они горят! Это лучшая награда для меня как преподавателя." data-en="In the video section you can see how we 'bring to life' the pages of Power Up on screen. Look at the children's eyes — they sparkle! That's the best reward for me as a teacher.">В разделе видео вы можете посмотреть, как мы «оживляем» страницы Power Up на экране. Обратите внимание на глаза детей — они горят! Это лучшая награда для меня как преподавателя.</blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="container">
+    <div class="cta__inner">
+      <h2 data-ru="Хотите попробовать?" data-en="Want to try?">Хотите попробовать?</h2>
+      <p data-ru="Я приглашаю вас на <strong>бесплатный пробный урок (20 минут)</strong>. Это не просто тестирование. На этом занятии мы познакомимся с героями Power Up, я покажу, как проходят наши игры, и пойму, на чем сделать акцент в обучении вашего ребенка. Вы увидите своими глазами, что ребенок может радоваться английскому, а не бояться его." data-en="I invite you to a <strong>free trial lesson (20 minutes)</strong>. This isn't just a test. During this session we'll meet the Power Up characters, I'll show you how our games work, and I'll figure out what to focus on in your child's learning. You'll see with your own eyes that your child can enjoy English rather than fear it.">Я приглашаю вас на <strong>бесплатный пробный урок (20 минут)</strong>. Это не просто тестирование. На этом занятии мы познакомимся с героями Power Up, я покажу, как проходят наши игры, и пойму, на чем сделать акцент в обучении вашего ребенка. Вы увидите своими глазами, что ребенок может радоваться английскому, а не бояться его.</p>
+
+    <div class="cta__buttons">
+      <a href="https://t.me/leysan_english" class="btn btn--large btn--telegram" target="_blank" rel="noopener">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.46-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.441-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.14.121.099.154.233.17.327.016.094.036.307.02.474z"/></svg>
+        <span data-ru="Написать в Telegram" data-en="Message on Telegram">Написать в Telegram</span>
+      </a>
+    </div>
+
+      <p class="cta__closing" data-ru="Запишитесь на пробный урок уже сегодня! Давайте вместе сделаем английский любимым хобби вашего ребенка." data-en="Sign up for a trial lesson today! Let's make English your child's favorite hobby together.">Запишитесь на пробный урок уже сегодня! Давайте вместе сделаем английский любимым хобби вашего ребенка.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer__name">Leysan — English Tutor</p>
+    <p class="footer__copy">&copy; 2026 <span data-ru="Все права защищены" data-en="All rights reserved">Все права защищены</span></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox__close">&times;</span>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="">
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

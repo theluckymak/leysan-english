@@ -1,0 +1,79 @@
+(function() {
+  var lang = localStorage.getItem('leysan-lang') || 'ru';
+  var toggle = document.getElementById('langToggle');
+  var menuBtn = document.getElementById('mobileMenuBtn');
+  var nav = document.querySelector('.nav');
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightboxImg');
+
+  function setLang(l) {
+    lang = l;
+    localStorage.setItem('leysan-lang', lang);
+    document.documentElement.lang = lang;
+
+    toggle.classList.remove('ru', 'en');
+    toggle.classList.add(lang);
+    toggle.querySelector('.lang-toggle__active').textContent = lang.toUpperCase();
+    toggle.querySelector('.lang-toggle__inactive').textContent = (lang === 'ru' ? 'EN' : 'RU');
+
+    var els = document.querySelectorAll('[data-' + lang + ']');
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
+      var text = el.getAttribute('data-' + lang);
+      if (text) {
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+          el.placeholder = text;
+        } else {
+          el.innerHTML = text;
+        }
+      }
+    }
+  }
+
+  toggle.addEventListener('click', function() {
+    setLang(lang === 'ru' ? 'en' : 'ru');
+  });
+
+  menuBtn.addEventListener('click', function() {
+    nav.classList.toggle('active');
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!nav.contains(e.target) && e.target !== menuBtn && !menuBtn.contains(e.target)) {
+      nav.classList.remove('active');
+    }
+  });
+
+  nav.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      nav.classList.remove('active');
+    });
+  });
+
+  var diplomaCards = document.querySelectorAll('.diploma-card');
+  diplomaCards.forEach(function(card) {
+    card.addEventListener('click', function() {
+      var img = card.querySelector('img');
+      if (img) {
+        lightboxImg.src = img.src;
+        lightbox.classList.add('active');
+      }
+    });
+  });
+
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox || e.target.classList.contains('lightbox__close')) {
+      lightbox.classList.remove('active');
+      lightboxImg.src = '';
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+      lightbox.classList.remove('active');
+      lightboxImg.src = '';
+    }
+  });
+
+  setLang(lang);
+})();
