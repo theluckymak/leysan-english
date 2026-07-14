@@ -422,6 +422,7 @@ img {
 .benefit-card__icon {
   font-size: 2rem;
   margin-bottom: 8px;
+  color: var(--thistle);
 }
 
 .benefit-card h3 {
@@ -540,6 +541,7 @@ img {
   font-size: 2.4rem;
   display: block;
   margin-bottom: 12px;
+  color: var(--thistle);
 }
 
 .activity h4 {
