@@ -13,8 +13,6 @@
 
     toggle.classList.remove('ru', 'en');
     toggle.classList.add(lang);
-    toggle.querySelector('.lang-toggle__active').textContent = lang.toUpperCase();
-    toggle.querySelector('.lang-toggle__inactive').textContent = (lang === 'ru' ? 'EN' : 'RU');
 
     var els = document.querySelectorAll('[data-' + lang + ']');
     for (var i = 0; i < els.length; i++) {
