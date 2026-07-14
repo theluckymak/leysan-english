@@ -231,42 +231,44 @@ img {
 
 /* ── Hero ── */
 .hero {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 100px 0 60px;
+  padding: 120px 0 80px;
 }
 
 .hero__bg {
   position: absolute;
   inset: 0;
   background: var(--gradient-hero);
-  opacity: 0.12;
+  opacity: 0.15;
   z-index: 0;
 }
 
 .hero__bg::before {
   content: '';
   position: absolute;
-  top: -30%;
-  right: -10%;
-  width: 500px;
-  height: 500px;
+  top: -15%;
+  right: -5%;
+  width: 550px;
+  height: 550px;
   background: radial-gradient(circle, var(--pastel-petal) 0%, transparent 70%);
   border-radius: 50%;
+  opacity: 0.5;
 }
 
 .hero__bg::after {
   content: '';
   position: absolute;
-  bottom: -20%;
-  left: -10%;
-  width: 400px;
-  height: 400px;
+  bottom: -10%;
+  left: -5%;
+  width: 450px;
+  height: 450px;
   background: radial-gradient(circle, var(--sky-blue) 0%, transparent 70%);
   border-radius: 50%;
+  opacity: 0.5;
 }
 
 .hero__content {
@@ -308,14 +310,14 @@ img {
 
 /* ── About ── */
 .about {
-  padding: 80px 0;
+  padding: 64px 0;
   background: linear-gradient(180deg, var(--white) 0%, rgba(189, 224, 254, 0.12) 100%);
 }
 
 .about__grid {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  gap: 60px;
+  gap: 48px;
   align-items: center;
 }
 
@@ -332,13 +334,13 @@ img {
 
 .about__text h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .about__text p {
   font-size: 1.05rem;
   color: var(--text-light);
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
 .about__stats {
@@ -369,7 +371,7 @@ img {
 
 /* ── Why Online ── */
 .why-online {
-  padding: 80px 0;
+  padding: 64px 0;
 }
 
 .section-title {
@@ -382,13 +384,13 @@ img {
   text-align: center;
   color: var(--text-light);
   font-size: 1.05rem;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .why-online__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 50px;
+  gap: 40px;
   align-items: start;
 }
 
@@ -408,7 +410,7 @@ img {
   background: var(--white);
   border: 1.5px solid rgba(205, 180, 219, 0.3);
   border-radius: var(--radius);
-  padding: 24px;
+  padding: 28px 20px 24px;
   text-align: center;
   transition: all 0.3s;
 }
@@ -420,8 +422,15 @@ img {
 }
 
 .benefit-card__icon {
-  font-size: 2rem;
-  margin-bottom: 8px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(205, 180, 219, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  font-size: 1.4rem;
   color: var(--thistle);
 }
 
@@ -437,14 +446,14 @@ img {
 
 /* ── Textbook ── */
 .textbook {
-  padding: 80px 0;
+  padding: 64px 0;
   background: linear-gradient(180deg, rgba(189, 224, 254, 0.12) 0%, var(--white) 100%);
 }
 
 .textbook__inner {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 50px;
+  gap: 40px;
   align-items: center;
 }
 
@@ -462,7 +471,7 @@ img {
 .badge {
   background: var(--gradient-card);
   border-radius: var(--radius);
-  padding: 36px 40px;
+  padding: 28px 36px;
   text-align: center;
   color: var(--white);
   box-shadow: var(--shadow);
@@ -494,15 +503,15 @@ img {
 
 /* ── Lessons ── */
 .lessons {
-  padding: 80px 0;
+  padding: 64px 0;
 }
 
 .lessons__highlight {
   background: rgba(205, 180, 219, 0.08);
   border-left: 4px solid var(--thistle);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  padding: 24px 28px;
-  margin-bottom: 48px;
+  padding: 20px 28px;
+  margin-bottom: 36px;
 }
 
 .lessons__highlight p {
@@ -512,21 +521,21 @@ img {
 
 .lessons__activities h3 {
   font-size: 1.4rem;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .activities-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .activity {
   background: var(--white);
   border: 1.5px solid rgba(205, 180, 219, 0.25);
   border-radius: var(--radius);
-  padding: 28px 20px;
+  padding: 28px 18px 24px;
   text-align: center;
   transition: all 0.3s;
 }
@@ -538,9 +547,15 @@ img {
 }
 
 .activity__icon {
-  font-size: 2.4rem;
-  display: block;
-  margin-bottom: 12px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(205, 180, 219, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 1.6rem;
   color: var(--thistle);
 }
 
@@ -557,8 +572,8 @@ img {
 .lessons__pace {
   background: linear-gradient(135deg, rgba(189, 224, 254, 0.2), rgba(255, 200, 221, 0.2));
   border-radius: var(--radius);
-  padding: 28px 32px;
-  margin-bottom: 40px;
+  padding: 24px 32px;
+  margin-bottom: 32px;
   text-align: center;
 }
 
@@ -579,7 +594,7 @@ img {
 
 /* ── Pricing ── */
 .pricing {
-  padding: 80px 0;
+  padding: 64px 0;
   background: linear-gradient(180deg, var(--white) 0%, rgba(162, 210, 255, 0.1) 100%);
 }
 
@@ -587,7 +602,7 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin-top: 48px;
+  margin-top: 36px;
 }
 
 .price-card {
@@ -664,14 +679,14 @@ img {
 
 /* ── Diplomas ── */
 .diplomas {
-  padding: 80px 0;
+  padding: 64px 0;
 }
 
 .diplomas__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
-  margin-top: 48px;
+  margin-top: 36px;
 }
 
 .diploma-card {
@@ -696,13 +711,13 @@ img {
 
 /* ── Video Teaser ── */
 .video-teaser {
-  padding: 60px 0;
+  padding: 48px 0;
 }
 
 .video-teaser__inner {
   background: linear-gradient(135deg, rgba(255, 175, 204, 0.15), rgba(162, 210, 255, 0.15));
   border-radius: var(--radius);
-  padding: 48px 40px;
+  padding: 36px 40px;
   text-align: center;
 }
 
@@ -729,7 +744,7 @@ img {
 
 /* ── CTA ── */
 .cta {
-  padding: 80px 0 100px;
+  padding: 64px 0 80px;
 }
 
 .cta__inner {
@@ -740,7 +755,7 @@ img {
 
 .cta__inner h2 {
   font-size: 2.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   background: var(--gradient-card);
   -webkit-background-clip: text;
   background-clip: text;
@@ -750,7 +765,7 @@ img {
 .cta__inner p {
   color: var(--text-light);
   font-size: 1.05rem;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .cta__buttons {
@@ -768,7 +783,7 @@ img {
 
 /* ── Footer ── */
 .footer {
-  padding: 32px 0;
+  padding: 24px 0;
   text-align: center;
   border-top: 1px solid rgba(205, 180, 219, 0.2);
 }
