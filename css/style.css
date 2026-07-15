@@ -331,15 +331,18 @@ img {
   align-items: center;
 }
 
-.about__image-placeholder {
-  width: 100%;
-  max-width: 240px;
-  margin: 0 auto;
+.about__image {
+  display: flex;
+  justify-content: center;
 }
 
-.about__image-placeholder svg {
-  width: 100%;
-  height: auto;
+.about__photo {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--thistle);
+  box-shadow: var(--shadow);
 }
 
 .about__text h2 {
