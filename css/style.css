@@ -1,16 +1,16 @@
 :root {
-  --thistle: #cdb4db;
-  --pastel-petal: #ffc8dd;
-  --baby-pink: #ffafcc;
-  --icy-blue: #bde0fe;
-  --sky-blue: #a2d2ff;
+  --thistle: #da627d;
+  --pastel-petal: #ffa5ab;
+  --baby-pink: #f9dbbd;
+  --icy-blue: #f9dbbd;
+  --sky-blue: #a53860;
   --text: #2d2d3f;
   --text-light: #5a5a72;
   --white: #ffffff;
   --gradient-hero: linear-gradient(135deg, var(--sky-blue) 0%, var(--pastel-petal) 40%, var(--baby-pink) 70%, var(--thistle) 100%);
   --gradient-card: linear-gradient(135deg, var(--pastel-petal), var(--thistle));
-  --shadow: 0 4px 24px rgba(205, 180, 219, 0.25);
-  --shadow-hover: 0 8px 32px rgba(205, 180, 219, 0.4);
+  --shadow: 0 4px 24px rgba(218, 98, 125, 0.25);
+  --shadow-hover: 0 8px 32px rgba(218, 98, 125, 0.4);
   --radius: 16px;
   --radius-sm: 10px;
 }
@@ -67,7 +67,7 @@ img {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(205, 180, 219, 0.2);
+  border-bottom: 1px solid rgba(218, 98, 125, 0.2);
   transition: background 0.3s;
 }
 
@@ -89,44 +89,17 @@ img {
   letter-spacing: -0.5px;
 }
 
-.nav {
+.header__right {
   display: flex;
   align-items: center;
-  gap: 28px;
-}
-
-.nav a {
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: var(--text-light);
-  transition: color 0.2s;
-  position: relative;
-}
-
-.nav a:hover {
-  color: var(--thistle);
-}
-
-.nav a::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--thistle);
-  transition: width 0.25s;
-}
-
-.nav a:hover::after {
-  width: 100%;
+  gap: 14px;
 }
 
 .lang-toggle {
   position: relative;
   width: 72px;
   height: 32px;
-  background: rgba(205, 180, 219, 0.18);
+  background: rgba(218, 98, 125, 0.18);
   border: 1.5px solid var(--thistle);
   border-radius: 50px;
   cursor: pointer;
@@ -181,7 +154,7 @@ img {
 }
 
 .lang-toggle:hover .lang-toggle__knob {
-  box-shadow: 0 2px 8px rgba(205, 180, 219, 0.5);
+  box-shadow: 0 2px 8px rgba(218, 98, 125, 0.5);
 }
 
 /* ── Buttons ── */
@@ -196,19 +169,6 @@ img {
   cursor: pointer;
   transition: all 0.3s;
   text-align: center;
-}
-
-.btn--small {
-  padding: 8px 22px;
-  font-size: 0.9rem;
-  background: var(--thistle);
-  color: var(--white);
-  border-radius: 50px;
-}
-
-.btn--small:hover {
-  background: var(--baby-pink);
-  transform: translateY(-1px);
 }
 
 .btn--large {
@@ -300,7 +260,7 @@ img {
 .hero__shape--1 {
   width: 120px;
   height: 120px;
-  background: rgba(255, 175, 204, 0.15);
+  background: rgba(249, 219, 189, 0.15);
   top: 25%;
   right: 10%;
 }
@@ -308,7 +268,7 @@ img {
 .hero__shape--2 {
   width: 80px;
   height: 80px;
-  background: rgba(162, 210, 255, 0.2);
+  background: rgba(165, 56, 96, 0.2);
   bottom: 20%;
   right: 25%;
 }
@@ -316,7 +276,7 @@ img {
 .hero__shape--3 {
   width: 40px;
   height: 40px;
-  background: rgba(205, 180, 219, 0.25);
+  background: rgba(218, 98, 125, 0.25);
   top: 50%;
   right: 20%;
 }
@@ -361,7 +321,7 @@ img {
 /* ── About ── */
 .about {
   padding: 44px 0;
-  background: linear-gradient(180deg, var(--white) 0%, rgba(189, 224, 254, 0.12) 100%);
+  background: linear-gradient(180deg, var(--white) 0%, rgba(249, 219, 189, 0.12) 100%);
 }
 
 .about__grid {
@@ -458,7 +418,7 @@ img {
 
 .benefit-card {
   background: var(--white);
-  border: 1.5px solid rgba(205, 180, 219, 0.3);
+  border: 1.5px solid rgba(218, 98, 125, 0.3);
   border-radius: var(--radius);
   padding: 22px 16px 20px;
   text-align: center;
@@ -475,7 +435,7 @@ img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgba(205, 180, 219, 0.12);
+  background: rgba(218, 98, 125, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -497,7 +457,7 @@ img {
 /* ── Textbook ── */
 .textbook {
   padding: 44px 0;
-  background: linear-gradient(180deg, rgba(189, 224, 254, 0.12) 0%, var(--white) 100%);
+  background: linear-gradient(180deg, rgba(249, 219, 189, 0.12) 0%, var(--white) 100%);
 }
 
 .textbook__inner {
@@ -557,7 +517,7 @@ img {
 }
 
 .lessons__highlight {
-  background: rgba(205, 180, 219, 0.08);
+  background: rgba(218, 98, 125, 0.08);
   border-left: 4px solid var(--thistle);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   padding: 16px 24px;
@@ -583,7 +543,7 @@ img {
 
 .activity {
   background: var(--white);
-  border: 1.5px solid rgba(205, 180, 219, 0.25);
+  border: 1.5px solid rgba(218, 98, 125, 0.25);
   border-radius: var(--radius);
   padding: 22px 16px 20px;
   text-align: center;
@@ -600,7 +560,7 @@ img {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: rgba(205, 180, 219, 0.12);
+  background: rgba(218, 98, 125, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -620,7 +580,7 @@ img {
 }
 
 .lessons__pace {
-  background: linear-gradient(135deg, rgba(189, 224, 254, 0.2), rgba(255, 200, 221, 0.2));
+  background: linear-gradient(135deg, rgba(249, 219, 189, 0.2), rgba(255, 165, 171, 0.2));
   border-radius: var(--radius);
   padding: 20px 28px;
   margin-bottom: 24px;
@@ -645,7 +605,7 @@ img {
 /* ── Pricing / Format ── */
 .pricing {
   padding: 44px 0;
-  background: linear-gradient(180deg, var(--white) 0%, rgba(162, 210, 255, 0.1) 100%);
+  background: linear-gradient(180deg, var(--white) 0%, rgba(165, 56, 96, 0.1) 100%);
 }
 
 .formats {
@@ -702,7 +662,7 @@ img {
 .format-divider {
   width: 1px;
   height: 60px;
-  background: rgba(205, 180, 219, 0.35);
+  background: rgba(218, 98, 125, 0.35);
 }
 
 /* ── Diplomas ── */
@@ -761,7 +721,7 @@ img {
 }
 
 .video-teaser__inner {
-  background: linear-gradient(135deg, rgba(255, 175, 204, 0.15), rgba(162, 210, 255, 0.15));
+  background: linear-gradient(135deg, rgba(249, 219, 189, 0.15), rgba(165, 56, 96, 0.15));
   border-radius: var(--radius);
   padding: 28px 36px;
   text-align: center;
@@ -831,7 +791,7 @@ img {
 .footer {
   padding: 24px 0;
   text-align: center;
-  border-top: 1px solid rgba(205, 180, 219, 0.2);
+  border-top: 1px solid rgba(218, 98, 125, 0.2);
 }
 
 .footer__name {
@@ -893,12 +853,6 @@ img {
 
   .hero__title {
     font-size: 3.5rem;
-  }
-
-  .nav {
-    gap: 14px;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 
   .hero__decor {

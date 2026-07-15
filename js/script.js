@@ -1,7 +1,6 @@
 (function() {
   var lang = localStorage.getItem('leysan-lang') || 'ru';
   var toggle = document.getElementById('langToggle');
-  var nav = document.querySelector('.nav');
   var lightbox = document.getElementById('lightbox');
   var lightboxImg = document.getElementById('lightboxImg');
 
